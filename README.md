@@ -19,11 +19,11 @@ The concept of ClickBeetle is that accessibility is addressed first.  Regardless
 
 _The goals._
 
-[x] Provide a mechanism for keyboard navigation through the menu (tab and shift-tab navigation)
-[ ] Add ARIA tags for menu enabled and disabled
-[ ] Add role attribute to menus
-[ ] Provide easy designation of hover-state and click-state menu enabling/disabling
-[ ] Testable and well tested code
+- [x] Provide a mechanism for keyboard navigation through the menu (tab and shift-tab navigation)
+- [ ] Add ARIA tags for menu enabled and disabled
+- [ ] Add role attribute to menus
+- [ ] Provide easy designation of hover-state and click-state menu enabling/disabling
+- [ ] Testable and well tested code
 
 
 _Contributions._
