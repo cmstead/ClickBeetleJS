@@ -1,0 +1,9 @@
+.clickbeetle-menu{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.clickbeetle-menu.show{
+    overflow: visible;
+}
