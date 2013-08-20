@@ -8,7 +8,7 @@ To create a full-featured, modern menu script built from the perspective of acce
 
 _An introduction._
 
-CLickBeetleJS (originally just clickbeetle) is a project to create a simple to use, robust menu system in Javascript.  Though this is not a particularly new idea and there are possibly hundreds of ways to create menus for websites and apps, the missing piece is accessibility.
+ClickBeetleJS (originally just clickbeetle) is a project to create a simple to use, robust menu system in Javascript.  Though this is not a particularly new idea and there are possibly hundreds of ways to create menus for websites and apps, the missing piece is accessibility.
 
 Not all websites are concerned with accessibility, though they probably should be, there are many sectors both public and private where accessibility is not only a nice to have or should have, but instead it is required either by law or by some sort of evaluating agency.
 
@@ -19,11 +19,11 @@ The concept of ClickBeetle is that accessibility is addressed first.  Regardless
 
 _The goals._
 
-- [x] Provide a mechanism for keyboard navigation through the menu (tab and shift-tab navigation)
-- [ ] Add ARIA tags for menu enabled and disabled
-- [ ] Add role attribute to menus
-- [ ] Provide easy designation of hover-state and click-state menu enabling/disabling
-- [ ] Testable and well tested code
+[x] Provide a mechanism for keyboard navigation through the menu (tab and shift-tab navigation)
+[ ] Add ARIA tags for menu enabled and disabled
+[ ] Add role attribute to menus
+[ ] Provide easy designation of hover-state and click-state menu enabling/disabling
+[ ] Testable and well tested code
 
 
 _Contributions._
