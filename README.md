@@ -22,7 +22,7 @@ The concept of ClickBeetle is that accessibility is addressed first.  Regardless
 - [x] Provide a mechanism for keyboard navigation through the menu (tab and shift-tab navigation)
 - [x] Add/remove hide and show classes dynamically for browsers which have Javascript disabled or are not Javascript enabled
 - [x] Add role attribute to menus
-- [ ] Allow hover state interaction through class name
+- [x] Allow hover state interaction through class name
 - [ ] Allow click state interaction through class name
 - Testable and well tested code (This is ongoing)
 

@@ -7,15 +7,23 @@
     ClickBeetle.prototype = {
         $menus: [],
         $newFocus: false,
+        $timers: [],
 
         init: function(){
             var index = -1;
             this.$menus = $(document).find(".clickbeetle-menu");
+            this.$timers.length = this.$menus.length;
 
             while(typeof this.$menus[++index] !== "undefined"){
                 this.appendTabElement(this.$menus[index]);
                 this.coreBindings(this.$menus[index]);
                 this.setAttributes(this.$menus[index]);
+
+                if($(this.$menus[index]).hasClass("hover")){
+                    this.hoverBindings(this.$menus[index], index);
+                } else if($(this.$menus[index]).hasClass("click")){
+                    //add click binding code here.
+                }
             }
         },
 
@@ -32,6 +40,33 @@
             //Blur actions
             $(firstAnchor).bind("blur", this.blurAction);
             $(lastChild).bind("blur", this.blurAction);
+        },
+
+        hoverBindings: function($menu, $index){
+            var $this = this;
+
+            $($menu).bind("mouseenter", function(e){
+                $this.focusAction(e);
+            });
+
+            $($menu).bind("mouseleave", function(e){
+                clearTimer($index);
+                $this.$timers[$index] = setTimeout(function(){
+                    $this.blurAction(e);
+                }, 200);
+            });
+
+            $($menu).children().bind("mouseenter", function(e){
+                clearTimer($index);
+                $this.focusAction(e);
+            });
+
+            function clearTimer($i){
+                if($this.$timers[$i] !== null){
+                    clearTimeout($this.$timers[$i]);
+                    $this.$timers[$i] = null;
+                }
+            }
         },
 
         appendTabElement: function($menu){
