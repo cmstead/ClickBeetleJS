@@ -20,6 +20,35 @@ test("should place a tabindex of 0 on appended div element", function(){
     equal($(lastchild).attr("tabindex"), "0");
 });
 
+/* Accessibility enhancements */
+
+module("ClickBeetle accessibility enhancements", {
+    setup: function(){},
+    teardown: function(){
+        //Remove focus from all menu elements
+        $("#focusable").focus();
+    }
+});
+
+test("should add class 'hide' so menus show for browsers without javascript support", function(){
+    var hide = $($(".clickbeetle-menu")[0]).hasClass('hide');
+    equal(hide, true);
+});
+
+test("should add role=\"navigation\" to menu", function(){
+    var role = $($(".clickbeetle-menu")[0]).attr("role");
+    equal(role, "navigation");
+});
+
+test("should add role=\"menuitem\" to each anchor", function(){
+    var anchors = $(".clickbeetle-menu").find('a'),
+        anchor,
+        index = -1;
+    while(typeof (anchor = anchors[++index]) !== "undefined"){
+        equal($(anchor).attr("role"), "menuitem");
+    }
+});
+
 /* Focus interactions */
 
 module("ClickBeetle focus interactions", {
@@ -32,11 +61,16 @@ module("ClickBeetle focus interactions", {
         //Remove focus from all menu elements
         $("#focusable").focus();
     }
-})
+});
 
 test("should set the menu class to show when the main link gets focus", function(){
     $($(".clickbeetle-menu").find('a')[0]).focus();
     equal($($(".clickbeetle-menu")[0]).hasClass("show"), true);
+});
+
+test("should remove menu class 'hide' when the main link gets focus", function(){
+    $($(".clickbeetle-menu").find('a')[0]).focus();
+    equal(!$($(".clickbeetle-menu")[0]).hasClass("hide"), true);
 });
 
 test("should set the menu class to show when a random link gets focus", function(){
@@ -46,11 +80,25 @@ test("should set the menu class to show when a random link gets focus", function
     equal($($(".clickbeetle-menu")[0]).hasClass("show"), true);
 });
 
+test("should remove menu class 'hide' when a random link gets focus", function(){
+    var anchors = $(".clickbeetle-menu").find('a'),
+        index = Math.ceil(Math.random() * (anchors.length - 1));
+    $(anchors[index]).focus();
+    equal(!$($(".clickbeetle-menu")[0]).hasClass("hide"), true);
+});
+
 test("should set the menu class to show when the appended div element is focused", function(){
     var children = $($(".clickbeetle-menu")[0]).children(),
         lastChild = children[children.length - 1];
     $(lastChild).focus();
     equal($($(".clickbeetle-menu")[0]).hasClass("show"), true);
+});
+
+test("should remove menu class 'hide' when the appended div element is focused", function(){
+    var children = $($(".clickbeetle-menu")[0]).children(),
+        lastChild = children[children.length - 1];
+    $(lastChild).focus();
+    equal(!$($(".clickbeetle-menu")[0]).hasClass("hide"), true);
 });
 
 /* Blur interactions */
@@ -69,19 +117,35 @@ module("ClickBeetle blur interactions", {
         //remove focus from all menu elements
         $("#focusable").focus();
     }
-})
+});
 
-test("should remove class from menu when main link loses focus", function(){
+test("should remove class 'show' from menu when main link loses focus", function(){
     var mainLink = $($(".clickbeetle-menu")[0]).find('a')[0];
     $(mainLink).focus();
     $(mainLink).blur();
     equal($($(".clickbeetle-menu")[0]).hasClass("show"), false);
 });
 
-test("should remove class from menu when last child loses focus", function(){
+test("should add class 'hide' from menu when main link loses focus", function(){
+    var mainLink = $($(".clickbeetle-menu")[0]).find('a')[0];
+    $(mainLink).focus();
+    $(mainLink).blur();
+    equal($($(".clickbeetle-menu")[0]).hasClass("hide"), true);
+});
+
+test("should remove class 'show' from menu when last child loses focus", function(){
     var children = $($(".clickbeetle-menu")[0]).children(),
         lastChild = children[children.length - 1];
     $(lastChild).focus();
     $(lastChild).blur();
     equal($($(".clickbeetle-menu")[0]).hasClass("show"), false);
 });
+
+test("should remove class 'hide' from menu when last child loses focus", function(){
+    var children = $($(".clickbeetle-menu")[0]).children(),
+        lastChild = children[children.length - 1];
+    $(lastChild).focus();
+    $(lastChild).blur();
+    equal($($(".clickbeetle-menu")[0]).hasClass("hide"), true);
+});
+

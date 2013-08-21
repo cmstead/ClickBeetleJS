@@ -14,11 +14,12 @@
 
             while(typeof this.$menus[++index] !== "undefined"){
                 this.appendTabElement(this.$menus[index]);
-                this.bindings(this.$menus[index]);
+                this.coreBindings(this.$menus[index]);
+                this.setAttributes(this.$menus[index]);
             }
         },
 
-        bindings: function($menu){
+        coreBindings: function($menu){
             var children = $($menu).children(),
                 lastChild = children[children.length - 1],
                 anchors = $($menu).find('a'),
@@ -37,6 +38,14 @@
             $($menu).append("<div tabindex=\"0\"></div>");
         },
 
+        setAttributes: function($menu){
+            $($menu).attr("role", "navigation");
+            $($menu).find('a').attr("role", "menuitem");
+            if(!$($menu).hasClass("hide")){
+                $($menu).addClass("hide");
+            }
+        },
+
         focusAction: function(event){
             var $target = event.target;
 
@@ -46,6 +55,10 @@
 
             if(!$($target).hasClass("show")){
                 $($target).addClass("show");
+            }
+
+            while($($target).hasClass("hide")){
+                $($target).removeClass("hide");
             }
 
             this.$newFocus = true;
@@ -61,7 +74,12 @@
             while($($target).hasClass("show")){
                 $($target).removeClass("show");
             }
+
+            if(!$($target).hasClass("hide")){
+                $($target).addClass("hide");
+            }
         }
+
     }
 
     $(document).ready(function(document, $){
