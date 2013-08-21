@@ -6,7 +6,6 @@
 
     ClickBeetle.prototype = {
         $menus: [],
-        $newFocus: false,
         $timers: [],
 
         init: function(){
@@ -27,34 +26,57 @@
             }
         },
 
+
+        /* Prepare menu for added behaviors */
+
+        appendTabElement: function($menu){
+            $($menu).append("<div tabindex=\"0\"></div>");
+        },
+
+        setAttributes: function($menu){
+            $($menu).attr("role", "navigation");
+            $($menu).find('a').attr("role", "menuitem");
+            if(!$($menu).hasClass("hide")){
+                $($menu).addClass("hide");
+            }
+        },
+
+
+        /* Prepare all bindings */
+
         coreBindings: function($menu){
-            var children = $($menu).children(),
-                lastChild = children[children.length - 1],
-                anchors = $($menu).find('a'),
-                firstAnchor = anchors[0];
+            var lastChild = $($($menu).children()).last();
+                firstAnchor = $($menu).find('a')[0],
+                $this = this;
 
-            //Focus actions
-            $($menu).find('a').bind("focus", this.focusAction);
-            $(lastChild).bind("focus", this.focusAction);
-
-            //Blur actions
-            $(firstAnchor).bind("blur", this.blurAction);
-            $(lastChild).bind("blur", this.blurAction);
+            $($menu).find('a').bind("focus", function(e){
+                $this.focusAction(e);
+            });
+            $(firstAnchor).bind("blur", function(e){
+                $this.blurAction(e);
+            });
+            $(lastChild)
+                .bind("focus", function(e){
+                    $this.focusAction(e)
+                })
+                .bind("blur", function(e){
+                    $this.blurAction(e);
+                });
         },
 
         hoverBindings: function($menu, $index){
             var $this = this;
 
-            $($menu).bind("mouseenter", function(e){
-                $this.focusAction(e);
-            });
-
-            $($menu).bind("mouseleave", function(e){
-                clearTimer($index);
-                $this.$timers[$index] = setTimeout(function(){
-                    $this.blurAction(e);
-                }, 200);
-            });
+            $($menu)
+                .bind("mouseenter", function(e){
+                    $this.focusAction(e);
+                })
+                .bind("mouseleave", function(e){
+                    clearTimer($index);
+                    $this.$timers[$index] = setTimeout(function(){
+                        $this.blurAction(e);
+                    }, 200);
+                });
 
             $($menu).children().bind("mouseenter", function(e){
                 clearTimer($index);
@@ -69,49 +91,44 @@
             }
         },
 
-        appendTabElement: function($menu){
-            $($menu).append("<div tabindex=\"0\"></div>");
-        },
 
-        setAttributes: function($menu){
-            $($menu).attr("role", "navigation");
-            $($menu).find('a').attr("role", "menuitem");
-            if(!$($menu).hasClass("hide")){
-                $($menu).addClass("hide");
-            }
-        },
+        /* Behavior actions */
 
         focusAction: function(event){
-            var $target = event.target;
+            var $target = this.findMenuTop(event.target);
 
-            while(!$($target).hasClass("clickbeetle-menu")){
-                $target = $($target).parent();
-            }
-
-            if(!$($target).hasClass("show")){
-                $($target).addClass("show");
-            }
-
-            while($($target).hasClass("hide")){
-                $($target).removeClass("hide");
-            }
-
-            this.$newFocus = true;
+            this.removeAllClassInstances($target, "hide");
+            this.addClassOnce($target, "show");
         },
 
         blurAction: function(event){
-            var $target = event.target;
+            var $target = this.findMenuTop(event.target);
+
+            this.removeAllClassInstances($target, "show");
+            this.addClassOnce($target, "hide");
+        },
+
+
+        /* Utility methods to make behaviors more reliable */
+
+        findMenuTop: function(element){
+            var $target = element;
 
             while(!$($target).hasClass("clickbeetle-menu")){
                 $target = $($target).parent();
             }
+            return $target;
+        },
 
-            while($($target).hasClass("show")){
-                $($target).removeClass("show");
+        removeAllClassInstances: function($target, $className){
+            while($($target).hasClass($className)){
+                $($target).removeClass($className);
             }
+        },
 
-            if(!$($target).hasClass("hide")){
-                $($target).addClass("hide");
+        addClassOnce: function($target, $className){
+            if(!$($target).hasClass($className)){
+                $($target).addClass($className);
             }
         }
 

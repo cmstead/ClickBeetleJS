@@ -20,6 +20,32 @@ test("should place a tabindex of 0 on appended div element", function(){
     equal($(lastchild).attr("tabindex"), "0");
 });
 
+test("should find top-most element of menu", function(){
+    var menuTop = $(".clickbeetle-menu")[0],
+        lastAnchor = $($(menuTop).find('a')).last(),
+        result = clickbeetle.findMenuTop(lastAnchor);
+    equal(result[0], $(menuTop)[0]);
+});
+
+test("should remove all instances of specified class from target element", function(){
+    var $target = $(".clickbeetle-menu");
+    for(i = 0; i < 4; i++){
+        $target.addClass("test");
+    }
+    clickbeetle.removeAllClassInstances($target, "test");
+    equal($($target).hasClass("test"), false);
+});
+
+test("should add a class name exactly once", function(){
+    var $target = $(".clickbeetle-menu");
+    for(i = 0; i < 4; i++){
+        clickbeetle.addClassOnce($target, "test");
+    }
+    equal($($target).hasClass("test"), true);
+    $($target).removeClass("test");
+    equal($($target).hasClass("test"), false);
+});
+
 /* Accessibility enhancements */
 
 module("ClickBeetle accessibility enhancements", {
@@ -141,7 +167,7 @@ test("should remove class 'show' from menu when last child loses focus", functio
     equal($($(".clickbeetle-menu")[0]).hasClass("show"), false);
 });
 
-test("should remove class 'hide' from menu when last child loses focus", function(){
+test("should add class 'hide' from menu when last child loses focus", function(){
     var children = $($(".clickbeetle-menu")[0]).children(),
         lastChild = children[children.length - 1];
     $(lastChild).focus();
