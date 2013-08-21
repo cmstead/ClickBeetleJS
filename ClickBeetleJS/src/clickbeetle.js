@@ -21,7 +21,7 @@
                 if($(this.$menus[index]).hasClass("hover")){
                     this.hoverBindings(this.$menus[index], index);
                 } else if($(this.$menus[index]).hasClass("click")){
-                    //add click binding code here.
+                    this.clickBindings(this.$menus[index]);
                 }
             }
         },
@@ -30,7 +30,7 @@
         /* Prepare menu for added behaviors */
 
         appendTabElement: function($menu){
-            $($menu).append("<div tabindex=\"0\"></div>");
+            $($menu).append("<div></div>");
         },
 
         setAttributes: function($menu){
@@ -39,6 +39,7 @@
             if(!$($menu).hasClass("hide")){
                 $($menu).addClass("hide");
             }
+            $($menu).children().last().attr("tabindex", 0);
         },
 
 
@@ -89,6 +90,10 @@
                     $this.$timers[$i] = null;
                 }
             }
+        },
+
+        clickBindings: function($menu){
+
         },
 
 
