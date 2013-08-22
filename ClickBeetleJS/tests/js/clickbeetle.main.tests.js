@@ -4,6 +4,12 @@ test("should be available for use", function(){
     notEqual(typeof clickbeetle, "undefined");
 });
 
+test("should allow reinitialization for single-page apps", function(){
+    //Note: this will make other tests fail if their actions are not unbound and rebound
+    clickbeetle.init();
+    notEqual(typeof clickbeetle, "undefined");
+})
+
 test("should have a menu array conatining one element", function(){
     equal(clickbeetle.$menus.length, 1);
 });

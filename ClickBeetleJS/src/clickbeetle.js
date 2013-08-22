@@ -11,6 +11,7 @@
         init: function(){
             var index = -1;
             this.$menus = $(document).find(".clickbeetle-menu");
+            this.$timers.length = 0;
             this.$timers.length = this.$menus.length;
 
             while(typeof this.$menus[++index] !== "undefined"){
@@ -50,16 +51,24 @@
                 firstAnchor = $($menu).find('a')[0],
                 $this = this;
 
-            $($menu).find('a').bind("focus", function(e){
-                $this.focusAction(e);
-            });
-            $(firstAnchor).bind("blur", function(e){
-                $this.blurAction(e);
-            });
+            $($menu).find('a')
+                .unbind("focus")
+                .bind("focus", function(e){
+                    $this.focusAction(e);
+                });
+
+            $(firstAnchor)
+                .unbind("blur")
+                .bind("blur", function(e){
+                    $this.blurAction(e);
+                });
+
             $(lastChild)
+                .unbind("focus")
                 .bind("focus", function(e){
                     $this.focusAction(e)
                 })
+                .unbind("blur")
                 .bind("blur", function(e){
                     $this.blurAction(e);
                 });
@@ -69,9 +78,11 @@
             var $this = this;
 
             $($menu)
+                .unbind("mouseenter")
                 .bind("mouseenter", function(e){
                     $this.focusAction(e);
                 })
+                .unbind("mouseleave")
                 .bind("mouseleave", function(e){
                     clearTimer($index);
                     $this.$timers[$index] = setTimeout(function(){
@@ -79,10 +90,12 @@
                     }, 200);
                 });
 
-            $($menu).children().bind("mouseenter", function(e){
-                clearTimer($index);
-                $this.focusAction(e);
-            });
+            $($menu).children()
+                .unbind("mouseenter")
+                .bind("mouseenter", function(e){
+                    clearTimer($index);
+                    $this.focusAction(e);
+                });
 
             function clearTimer($i){
                 if($this.$timers[$i] !== null){
@@ -97,22 +110,26 @@
                 anchors = $($menu).find('a'),
                 index = 0;
 
-            $($menu).find('a').first().bind("click", function(e){
-                if($($menu).hasClass("hide")){
-                    $this.focusAction(e);
-                } else {
-                    $this.blurAction(e);
-                }
-                e.stopPropagation();
-                return false;
-            });
-
-            while(typeof (anchor = anchors[++index]) !== 'undefined'){
-                $(anchor).bind('click', function(e){
-                    $this.blurAction(e);
+            $($menu).find('a').first()
+                .unbind("click")
+                .bind("click", function(e){
+                    if($($menu).hasClass("hide")){
+                        $this.focusAction(e);
+                    } else {
+                        $this.blurAction(e);
+                    }
                     e.stopPropagation();
                     return false;
                 });
+
+            while(typeof (anchor = anchors[++index]) !== 'undefined'){
+                $(anchor)
+                    .unbind("click")
+                    .bind('click', function(e){
+                        $this.blurAction(e);
+                        e.stopPropagation();
+                        return false;
+                    });
             }
         },
 
