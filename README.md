@@ -23,7 +23,7 @@ The concept of ClickBeetle is that accessibility is addressed first.  Regardless
 - [x] Add/remove hide and show classes dynamically for browsers which have Javascript disabled or are not Javascript enabled
 - [x] Add role attribute to menus
 - [x] Allow hover state interaction through class name
-- [ ] Allow click state interaction through class name
+- [x] Allow click state interaction through class name
 - Testable and well tested code (This is ongoing)
 
 
