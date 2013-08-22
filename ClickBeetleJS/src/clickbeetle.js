@@ -128,7 +128,7 @@
                     .bind('click', function(e){
                         $this.blurAction(e);
                         e.stopPropagation();
-                        return false;
+                        return true;
                     });
             }
         },
