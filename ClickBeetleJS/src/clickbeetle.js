@@ -93,7 +93,27 @@
         },
 
         clickBindings: function($menu){
+            var $this = this,
+                anchors = $($menu).find('a'),
+                index = 0;
 
+            $($menu).find('a').first().bind("click", function(e){
+                if($($menu).hasClass("hide")){
+                    $this.focusAction(e);
+                } else {
+                    $this.blurAction(e);
+                }
+                e.stopPropagation();
+                return false;
+            });
+
+            while(typeof (anchor = anchors[++index]) !== 'undefined'){
+                $(anchor).bind('click', function(e){
+                    $this.blurAction(e);
+                    e.stopPropagation();
+                    return false;
+                });
+            }
         },
 
 
@@ -102,15 +122,15 @@
         focusAction: function(event){
             var $target = this.findMenuTop(event.target);
 
-            this.removeAllClassInstances($target, "hide");
-            this.addClassOnce($target, "show");
+            this.classRemoveAll($target, "hide");
+            this.classAddOnce($target, "show");
         },
 
         blurAction: function(event){
             var $target = this.findMenuTop(event.target);
 
-            this.removeAllClassInstances($target, "show");
-            this.addClassOnce($target, "hide");
+            this.classRemoveAll($target, "show");
+            this.classAddOnce($target, "hide");
         },
 
 
@@ -125,13 +145,13 @@
             return $target;
         },
 
-        removeAllClassInstances: function($target, $className){
+        classRemoveAll: function($target, $className){
             while($($target).hasClass($className)){
                 $($target).removeClass($className);
             }
         },
 
-        addClassOnce: function($target, $className){
+        classAddOnce: function($target, $className){
             if(!$($target).hasClass($className)){
                 $($target).addClass($className);
             }

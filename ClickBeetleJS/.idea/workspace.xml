@@ -5,9 +5,9 @@
     <ignored path="ClickBeetleJS.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/accessible.js" changelist="acc60aa3-1578-4b1b-91ad-0f90af866a35" time="1376613638276" ignored="false" />
-    <file path="/clickbeetle.js" changelist="acc60aa3-1578-4b1b-91ad-0f90af866a35" time="1377119411693" ignored="false" />
-    <file path="/clickbeetle.main.tests.js" changelist="acc60aa3-1578-4b1b-91ad-0f90af866a35" time="1377052190604" ignored="false" />
-    <file path="/clickbeetle.tests.html" changelist="acc60aa3-1578-4b1b-91ad-0f90af866a35" time="1376671546334" ignored="false" />
+    <file path="/clickbeetle.js" changelist="acc60aa3-1578-4b1b-91ad-0f90af866a35" time="1377191324006" ignored="false" />
+    <file path="/clickbeetle.main.tests.js" changelist="acc60aa3-1578-4b1b-91ad-0f90af866a35" time="1377191237575" ignored="false" />
+    <file path="/clickbeetle.tests.html" changelist="acc60aa3-1578-4b1b-91ad-0f90af866a35" time="1377190711960" ignored="false" />
     <file path="/clickbeetle.example.html" changelist="acc60aa3-1578-4b1b-91ad-0f90af866a35" time="1377049750673" ignored="false" />
     <file path="/clickbeetle.css" changelist="acc60aa3-1578-4b1b-91ad-0f90af866a35" time="1377045323025" ignored="false" />
     <file path="/example.css" changelist="acc60aa3-1578-4b1b-91ad-0f90af866a35" time="1377040114655" ignored="false" />
@@ -33,18 +33,58 @@
       <file leaf-file-name="clickbeetle.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/clickbeetle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="24" selection-start="195" selection-end="195" vertical-scroll-proportion="0.13662238">
+            <state line="121" column="0" selection-start="3659" selection-end="3659" vertical-scroll-proportion="0.40417457">
               <folding>
                 <element signature="e#195#877#0" expanded="false" />
+                <element signature="e#407#867#0" expanded="false" />
                 <element signature="e#970#1025#0" expanded="false" />
                 <element signature="e#1066#1344#0" expanded="false" />
                 <element signature="e#1421#2026#0" expanded="false" />
                 <element signature="e#2075#2870#0" expanded="false" />
-                <element signature="e#2995#3172#0" expanded="false" />
-                <element signature="e#3210#3387#0" expanded="false" />
-                <element signature="e#3492#3689#0" expanded="false" />
-                <element signature="e#3754#3883#0" expanded="false" />
-                <element signature="e#3937#4061#0" expanded="false" />
+                <element signature="e#2911#3623#0" expanded="false" />
+                <element signature="e#3409#3613#0" expanded="false" />
+                <element signature="e#3695#3863#0" expanded="false" />
+                <element signature="e#3901#4069#0" expanded="false" />
+                <element signature="e#4174#4371#0" expanded="false" />
+                <element signature="e#4427#4556#0" expanded="false" />
+                <element signature="e#4610#4734#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clickbeetle.main.tests.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/js/clickbeetle.main.tests.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="199" column="95" selection-start="6918" selection-end="6918" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#76#126#0" expanded="false" />
+                <element signature="e#196#240#0" expanded="false" />
+                <element signature="e#304#454#0" expanded="false" />
+                <element signature="e#529#690#0" expanded="false" />
+                <element signature="e#749#941#0" expanded="false" />
+                <element signature="e#1030#1239#0" expanded="false" />
+                <element signature="e#1298#1557#0" expanded="false" />
+                <element signature="e#1644#1783#0" expanded="false" />
+                <element signature="e#1883#1971#0" expanded="false" />
+                <element signature="e#2032#2124#0" expanded="false" />
+                <element signature="e#2190#2401#0" expanded="false" />
+                <element signature="e#2472#2782#0" expanded="false" />
+                <element signature="e#2868#2987#0" expanded="false" />
+                <element signature="e#3071#3191#0" expanded="false" />
+                <element signature="e#3277#3492#0" expanded="false" />
+                <element signature="e#3576#3792#0" expanded="false" />
+                <element signature="e#3889#4093#0" expanded="false" />
+                <element signature="e#4188#4393#0" expanded="false" />
+                <element signature="e#4462#4920#0" expanded="false" />
+                <element signature="e#5006#5185#0" expanded="false" />
+                <element signature="e#5268#5446#0" expanded="false" />
+                <element signature="e#5533#5763#0" expanded="false" />
+                <element signature="e#5847#6076#0" expanded="false" />
+                <element signature="e#6147#6284#0" expanded="false" />
+                <element signature="e#6367#6535#0" expanded="false" />
+                <element signature="e#6619#6819#0" expanded="false" />
+                <element signature="e#6918#7207#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -62,11 +102,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/accessible.js" />
         <option value="$PROJECT_DIR$/tests/clickbeetle.main.tests.js" />
-        <option value="$PROJECT_DIR$/tests/html/clickbeetle.tests.html" />
         <option value="$PROJECT_DIR$/tests/html/clickbeetle.example.html" />
         <option value="$PROJECT_DIR$/examples/css/example.css" />
         <option value="$PROJECT_DIR$/src/clickbeetle.css" />
         <option value="$PROJECT_DIR$/examples/clickbeetle.example.html" />
+        <option value="$PROJECT_DIR$/tests/html/clickbeetle.tests.html" />
         <option value="$PROJECT_DIR$/tests/js/clickbeetle.main.tests.js" />
         <option value="$PROJECT_DIR$/src/clickbeetle.js" />
       </list>
@@ -144,6 +184,10 @@
               <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -193,8 +237,8 @@
     <property name="options.lastSelected" value="editor" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -319,15 +363,39 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#195#877#0" expanded="false" />
+            <element signature="e#407#867#0" expanded="false" />
             <element signature="e#970#1025#0" expanded="false" />
             <element signature="e#1066#1344#0" expanded="false" />
             <element signature="e#1421#2026#0" expanded="false" />
             <element signature="e#2075#2870#0" expanded="false" />
-            <element signature="e#2995#3172#0" expanded="false" />
-            <element signature="e#3210#3387#0" expanded="false" />
-            <element signature="e#3492#3689#0" expanded="false" />
-            <element signature="e#3754#3883#0" expanded="false" />
-            <element signature="e#3937#4061#0" expanded="false" />
+            <element signature="e#2911#3623#0" expanded="false" />
+            <element signature="e#3409#3613#0" expanded="false" />
+            <element signature="e#3695#3863#0" expanded="false" />
+            <element signature="e#3901#4069#0" expanded="false" />
+            <element signature="e#4174#4371#0" expanded="false" />
+            <element signature="e#4427#4556#0" expanded="false" />
+            <element signature="e#4610#4734#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clickbeetle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#195#877#0" expanded="false" />
+            <element signature="e#407#867#0" expanded="false" />
+            <element signature="e#970#1025#0" expanded="false" />
+            <element signature="e#1066#1344#0" expanded="false" />
+            <element signature="e#1421#2026#0" expanded="false" />
+            <element signature="e#2075#2870#0" expanded="false" />
+            <element signature="e#2911#3623#0" expanded="false" />
+            <element signature="e#3409#3613#0" expanded="false" />
+            <element signature="e#3695#3863#0" expanded="false" />
+            <element signature="e#3901#4069#0" expanded="false" />
+            <element signature="e#4174#4371#0" expanded="false" />
+            <element signature="e#4427#4556#0" expanded="false" />
+            <element signature="e#4610#4734#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -341,24 +409,28 @@
             <element signature="e#304#454#0" expanded="false" />
             <element signature="e#529#690#0" expanded="false" />
             <element signature="e#749#941#0" expanded="false" />
-            <element signature="e#1030#1248#0" expanded="false" />
-            <element signature="e#1307#1566#0" expanded="false" />
-            <element signature="e#1653#1792#0" expanded="false" />
-            <element signature="e#1892#1980#0" expanded="false" />
-            <element signature="e#2041#2133#0" expanded="false" />
-            <element signature="e#2199#2410#0" expanded="false" />
-            <element signature="e#2481#2791#0" expanded="false" />
-            <element signature="e#2877#2996#0" expanded="false" />
-            <element signature="e#3080#3200#0" expanded="false" />
-            <element signature="e#3286#3501#0" expanded="false" />
-            <element signature="e#3585#3801#0" expanded="false" />
-            <element signature="e#3898#4102#0" expanded="false" />
-            <element signature="e#4197#4402#0" expanded="false" />
-            <element signature="e#4471#4929#0" expanded="false" />
-            <element signature="e#5015#5194#0" expanded="false" />
-            <element signature="e#5277#5455#0" expanded="false" />
-            <element signature="e#5542#5772#0" expanded="false" />
-            <element signature="e#5856#6085#0" expanded="false" />
+            <element signature="e#1030#1239#0" expanded="false" />
+            <element signature="e#1298#1557#0" expanded="false" />
+            <element signature="e#1644#1783#0" expanded="false" />
+            <element signature="e#1883#1971#0" expanded="false" />
+            <element signature="e#2032#2124#0" expanded="false" />
+            <element signature="e#2190#2401#0" expanded="false" />
+            <element signature="e#2472#2782#0" expanded="false" />
+            <element signature="e#2868#2987#0" expanded="false" />
+            <element signature="e#3071#3191#0" expanded="false" />
+            <element signature="e#3277#3492#0" expanded="false" />
+            <element signature="e#3576#3792#0" expanded="false" />
+            <element signature="e#3889#4093#0" expanded="false" />
+            <element signature="e#4188#4393#0" expanded="false" />
+            <element signature="e#4462#4920#0" expanded="false" />
+            <element signature="e#5006#5185#0" expanded="false" />
+            <element signature="e#5268#5446#0" expanded="false" />
+            <element signature="e#5533#5763#0" expanded="false" />
+            <element signature="e#5847#6076#0" expanded="false" />
+            <element signature="e#6147#6284#0" expanded="false" />
+            <element signature="e#6367#6535#0" expanded="false" />
+            <element signature="e#6619#6819#0" expanded="false" />
+            <element signature="e#6918#7207#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -373,15 +445,18 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#195#877#0" expanded="false" />
+            <element signature="e#407#867#0" expanded="false" />
             <element signature="e#970#1025#0" expanded="false" />
             <element signature="e#1066#1344#0" expanded="false" />
             <element signature="e#1421#2026#0" expanded="false" />
             <element signature="e#2075#2870#0" expanded="false" />
-            <element signature="e#2995#3172#0" expanded="false" />
-            <element signature="e#3210#3387#0" expanded="false" />
-            <element signature="e#3492#3689#0" expanded="false" />
-            <element signature="e#3754#3883#0" expanded="false" />
-            <element signature="e#3937#4061#0" expanded="false" />
+            <element signature="e#2911#3623#0" expanded="false" />
+            <element signature="e#3409#3613#0" expanded="false" />
+            <element signature="e#3695#3863#0" expanded="false" />
+            <element signature="e#3901#4069#0" expanded="false" />
+            <element signature="e#4174#4371#0" expanded="false" />
+            <element signature="e#4427#4556#0" expanded="false" />
+            <element signature="e#4610#4734#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -395,24 +470,28 @@
             <element signature="e#304#454#0" expanded="false" />
             <element signature="e#529#690#0" expanded="false" />
             <element signature="e#749#941#0" expanded="false" />
-            <element signature="e#1030#1248#0" expanded="false" />
-            <element signature="e#1307#1566#0" expanded="false" />
-            <element signature="e#1653#1792#0" expanded="false" />
-            <element signature="e#1892#1980#0" expanded="false" />
-            <element signature="e#2041#2133#0" expanded="false" />
-            <element signature="e#2199#2410#0" expanded="false" />
-            <element signature="e#2481#2791#0" expanded="false" />
-            <element signature="e#2877#2996#0" expanded="false" />
-            <element signature="e#3080#3200#0" expanded="false" />
-            <element signature="e#3286#3501#0" expanded="false" />
-            <element signature="e#3585#3801#0" expanded="false" />
-            <element signature="e#3898#4102#0" expanded="false" />
-            <element signature="e#4197#4402#0" expanded="false" />
-            <element signature="e#4471#4929#0" expanded="false" />
-            <element signature="e#5015#5194#0" expanded="false" />
-            <element signature="e#5277#5455#0" expanded="false" />
-            <element signature="e#5542#5772#0" expanded="false" />
-            <element signature="e#5856#6085#0" expanded="false" />
+            <element signature="e#1030#1239#0" expanded="false" />
+            <element signature="e#1298#1557#0" expanded="false" />
+            <element signature="e#1644#1783#0" expanded="false" />
+            <element signature="e#1883#1971#0" expanded="false" />
+            <element signature="e#2032#2124#0" expanded="false" />
+            <element signature="e#2190#2401#0" expanded="false" />
+            <element signature="e#2472#2782#0" expanded="false" />
+            <element signature="e#2868#2987#0" expanded="false" />
+            <element signature="e#3071#3191#0" expanded="false" />
+            <element signature="e#3277#3492#0" expanded="false" />
+            <element signature="e#3576#3792#0" expanded="false" />
+            <element signature="e#3889#4093#0" expanded="false" />
+            <element signature="e#4188#4393#0" expanded="false" />
+            <element signature="e#4462#4920#0" expanded="false" />
+            <element signature="e#5006#5185#0" expanded="false" />
+            <element signature="e#5268#5446#0" expanded="false" />
+            <element signature="e#5533#5763#0" expanded="false" />
+            <element signature="e#5847#6076#0" expanded="false" />
+            <element signature="e#6147#6284#0" expanded="false" />
+            <element signature="e#6367#6535#0" expanded="false" />
+            <element signature="e#6619#6819#0" expanded="false" />
+            <element signature="e#6918#7207#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -420,11 +499,6 @@
     <entry file="file://$PROJECT_DIR$/tests/html/clickbeetle.tests.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="55" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/html/clickbeetle.tests.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="7" selection-start="0" selection-end="845" vertical-scroll-proportion="-21.25" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/css/example.css">
@@ -437,56 +511,72 @@
         <state line="4" column="1" selection-start="87" selection-end="87" vertical-scroll-proportion="0.056925997" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/examples/clickbeetle.example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="982" selection-end="982" vertical-scroll-proportion="0.5825243">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/html/clickbeetle.tests.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="52" selection-start="577" selection-end="577" vertical-scroll-proportion="0.29126215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/js/clickbeetle.main.tests.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="0" selection-start="4105" selection-end="4105" vertical-scroll-proportion="0.55502844">
+        <state line="199" column="95" selection-start="6918" selection-end="6918" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#76#126#0" expanded="false" />
             <element signature="e#196#240#0" expanded="false" />
             <element signature="e#304#454#0" expanded="false" />
             <element signature="e#529#690#0" expanded="false" />
             <element signature="e#749#941#0" expanded="false" />
-            <element signature="e#1030#1248#0" expanded="false" />
-            <element signature="e#1307#1566#0" expanded="false" />
-            <element signature="e#1653#1792#0" expanded="false" />
-            <element signature="e#1892#1980#0" expanded="false" />
-            <element signature="e#2041#2133#0" expanded="false" />
-            <element signature="e#2199#2410#0" expanded="false" />
-            <element signature="e#2481#2791#0" expanded="false" />
-            <element signature="e#2877#2996#0" expanded="false" />
-            <element signature="e#3080#3200#0" expanded="false" />
-            <element signature="e#3286#3501#0" expanded="false" />
-            <element signature="e#3585#3801#0" expanded="false" />
-            <element signature="e#3898#4102#0" expanded="false" />
-            <element signature="e#4197#4402#0" expanded="false" />
-            <element signature="e#4471#4929#0" expanded="false" />
-            <element signature="e#5015#5194#0" expanded="false" />
-            <element signature="e#5277#5455#0" expanded="false" />
-            <element signature="e#5542#5772#0" expanded="false" />
-            <element signature="e#5856#6085#0" expanded="false" />
+            <element signature="e#1030#1239#0" expanded="false" />
+            <element signature="e#1298#1557#0" expanded="false" />
+            <element signature="e#1644#1783#0" expanded="false" />
+            <element signature="e#1883#1971#0" expanded="false" />
+            <element signature="e#2032#2124#0" expanded="false" />
+            <element signature="e#2190#2401#0" expanded="false" />
+            <element signature="e#2472#2782#0" expanded="false" />
+            <element signature="e#2868#2987#0" expanded="false" />
+            <element signature="e#3071#3191#0" expanded="false" />
+            <element signature="e#3277#3492#0" expanded="false" />
+            <element signature="e#3576#3792#0" expanded="false" />
+            <element signature="e#3889#4093#0" expanded="false" />
+            <element signature="e#4188#4393#0" expanded="false" />
+            <element signature="e#4462#4920#0" expanded="false" />
+            <element signature="e#5006#5185#0" expanded="false" />
+            <element signature="e#5268#5446#0" expanded="false" />
+            <element signature="e#5533#5763#0" expanded="false" />
+            <element signature="e#5847#6076#0" expanded="false" />
+            <element signature="e#6147#6284#0" expanded="false" />
+            <element signature="e#6367#6535#0" expanded="false" />
+            <element signature="e#6619#6819#0" expanded="false" />
+            <element signature="e#6918#7207#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/clickbeetle.example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.61165047" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clickbeetle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="195" selection-end="195" vertical-scroll-proportion="0.13662238">
+        <state line="121" column="0" selection-start="3659" selection-end="3659" vertical-scroll-proportion="0.40417457">
           <folding>
             <element signature="e#195#877#0" expanded="false" />
+            <element signature="e#407#867#0" expanded="false" />
             <element signature="e#970#1025#0" expanded="false" />
             <element signature="e#1066#1344#0" expanded="false" />
             <element signature="e#1421#2026#0" expanded="false" />
             <element signature="e#2075#2870#0" expanded="false" />
-            <element signature="e#2995#3172#0" expanded="false" />
-            <element signature="e#3210#3387#0" expanded="false" />
-            <element signature="e#3492#3689#0" expanded="false" />
-            <element signature="e#3754#3883#0" expanded="false" />
-            <element signature="e#3937#4061#0" expanded="false" />
+            <element signature="e#2911#3623#0" expanded="false" />
+            <element signature="e#3409#3613#0" expanded="false" />
+            <element signature="e#3695#3863#0" expanded="false" />
+            <element signature="e#3901#4069#0" expanded="false" />
+            <element signature="e#4174#4371#0" expanded="false" />
+            <element signature="e#4427#4556#0" expanded="false" />
+            <element signature="e#4610#4734#0" expanded="false" />
           </folding>
         </state>
       </provider>

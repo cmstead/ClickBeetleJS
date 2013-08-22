@@ -32,14 +32,14 @@ test("should remove all instances of specified class from target element", funct
     for(i = 0; i < 4; i++){
         $target.addClass("test");
     }
-    clickbeetle.removeAllClassInstances($target, "test");
+    clickbeetle.classRemoveAll($target, "test");
     equal($($target).hasClass("test"), false);
 });
 
 test("should add a class name exactly once", function(){
     var $target = $(".clickbeetle-menu");
     for(i = 0; i < 4; i++){
-        clickbeetle.addClassOnce($target, "test");
+        clickbeetle.classAddOnce($target, "test");
     }
     equal($($target).hasClass("test"), true);
     $($target).removeClass("test");
@@ -175,3 +175,33 @@ test("should add class 'hide' from menu when last child loses focus", function()
     equal($($(".clickbeetle-menu")[0]).hasClass("hide"), true);
 });
 
+/* Click interactions */
+
+module("Clickbeetle click interactions", {
+    setup: function(){ },
+    teardown: function(){
+        clickbeetle.blurAction({ target: $('.clickbeetle-menu').first() });
+    }
+});
+
+test("should set menu class to show when main link is clicked once", function(){
+    var anchor = $(".clickbeetle-menu").first().find('a').first();
+    $(anchor).trigger("click");
+    equal($(".clickbeetle-menu").first().hasClass("show"), true);
+});
+
+test("should set menu class to hide when main link is clicked twice", function(){
+    var anchor = $(".clickbeetle-menu").first().find('a').first();
+    $(anchor).trigger("click");
+    $(anchor).trigger("click");
+    equal($(".clickbeetle-menu").first().hasClass("hide"), true);
+});
+
+test("should set menu class to hide when menu is open and non-main link is clicked", function(){
+    var mainAnchor = $(".clickbeetle-menu").first().find('a').first(),
+        secondaryAnchor = $(".clickbeetle-menu").first().find('a')[1];
+    $(mainAnchor).trigger("click");
+    $(secondaryAnchor).trigger("click");
+    equal($(".clickbeetle-menu").first().hasClass("hide"), true);
+
+});
