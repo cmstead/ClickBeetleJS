@@ -96,6 +96,7 @@ module("ClickBeetle focus interactions", {
 });
 
 test("should set the menu class to show when the main link gets focus", function(){
+    console.log( typeof $($(".clickbeetle-menu").find('a')[0]).focus);
     $($(".clickbeetle-menu").find('a')[0]).focus();
     equal($($(".clickbeetle-menu")[0]).hasClass("show"), true);
 });

@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="2e9434dc-1673-45ad-9f7f-4bcb01572ab7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClickBeetleJS/src/clickbeetle.js" afterPath="$PROJECT_DIR$/ClickBeetleJS/src/clickbeetle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClickBeetleJS/tests/js/clickbeetle.main.tests.js" afterPath="$PROJECT_DIR$/ClickBeetleJS/tests/js/clickbeetle.main.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ClickBeetleJS.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2e9434dc-1673-45ad-9f7f-4bcb01572ab7" time="1377193556273" ignored="false" />
-    <file path="/clickbeetle.js" changelist="2e9434dc-1673-45ad-9f7f-4bcb01572ab7" time="1377193667946" ignored="false" />
+    <file path="/Dummy.txt" changelist="2e9434dc-1673-45ad-9f7f-4bcb01572ab7" time="1377197043540" ignored="false" />
+    <file path="/clickbeetle.js" changelist="2e9434dc-1673-45ad-9f7f-4bcb01572ab7" time="1377204974716" ignored="false" />
+    <file path="/clickbeetle.main.tests.js" changelist="2e9434dc-1673-45ad-9f7f-4bcb01572ab7" time="1377203790728" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +29,46 @@
     <favorites_list name="ClickBeetleJS" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="clickbeetle.main.tests.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ClickBeetleJS/tests/js/clickbeetle.main.tests.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.016456923">
+              <folding>
+                <element signature="e#76#126#0" expanded="false" />
+                <element signature="e#199#362#0" expanded="false" />
+                <element signature="e#431#475#0" expanded="false" />
+                <element signature="e#539#689#0" expanded="false" />
+                <element signature="e#764#925#0" expanded="false" />
+                <element signature="e#984#1176#0" expanded="false" />
+                <element signature="e#1265#1474#0" expanded="false" />
+                <element signature="e#1533#1792#0" expanded="false" />
+                <element signature="e#1879#2018#0" expanded="false" />
+                <element signature="e#2118#2206#0" expanded="false" />
+                <element signature="e#2267#2359#0" expanded="false" />
+                <element signature="e#2425#2636#0" expanded="false" />
+                <element signature="e#2707#3017#0" expanded="false" />
+                <element signature="e#3103#3293#0" expanded="false" />
+                <element signature="e#3377#3497#0" expanded="false" />
+                <element signature="e#3583#3798#0" expanded="false" />
+                <element signature="e#3882#4098#0" expanded="false" />
+                <element signature="e#4195#4399#0" expanded="false" />
+                <element signature="e#4494#4699#0" expanded="false" />
+                <element signature="e#4768#5226#0" expanded="false" />
+                <element signature="e#5312#5491#0" expanded="false" />
+                <element signature="e#5574#5752#0" expanded="false" />
+                <element signature="e#5839#6069#0" expanded="false" />
+                <element signature="e#6153#6382#0" expanded="false" />
+                <element signature="e#6453#6590#0" expanded="false" />
+                <element signature="e#6673#6841#0" expanded="false" />
+                <element signature="e#6925#7125#0" expanded="false" />
+                <element signature="e#7224#7513#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -45,14 +87,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/ClickBeetleJS/src/clickbeetle.js" />
+        <option value="$PROJECT_DIR$/ClickBeetleJS/tests/js/clickbeetle.main.tests.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1680" />
-    <option name="y" value="-91" />
-    <option name="width" value="1920" />
-    <option name="height" value="1200" />
+    <option name="x" value="1672" />
+    <option name="y" value="-99" />
+    <option name="width" value="1936" />
+    <option name="height" value="1216" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -80,6 +123,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -95,6 +139,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ClickBeetleJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ClickBeetleJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ClickBeetleJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ClickBeetleJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -148,9 +214,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ClickBeetleJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ClickBeetleJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ClickBeetleJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -170,25 +253,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="-91" width="1920" height="1200" extended-state="6" />
-    <editor active="false" />
+    <frame x="1672" y="-99" width="1936" height="1216" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24986821" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15287296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -254,19 +337,56 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ClickBeetleJS/src/clickbeetle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="0" selection-start="4142" selection-end="4142" vertical-scroll-proportion="0.38498098">
+        <state line="110" column="0" selection-start="3421" selection-end="3421" vertical-scroll-proportion="0.42787996">
           <folding>
-            <element signature="e#195#914#0" expanded="false" />
-            <element signature="e#1007#1062#0" expanded="false" />
-            <element signature="e#1103#1381#0" expanded="false" />
-            <element signature="e#1458#2245#0" expanded="false" />
-            <element signature="e#2294#3232#0" expanded="false" />
-            <element signature="e#3273#4140#0" expanded="false" />
-            <element signature="e#4212#4380#0" expanded="false" />
-            <element signature="e#4418#4586#0" expanded="false" />
-            <element signature="e#4691#4888#0" expanded="false" />
-            <element signature="e#4944#5073#0" expanded="false" />
-            <element signature="e#5127#5251#0" expanded="false" />
+            <element signature="e#222#1101#0" expanded="false" />
+            <element signature="e#624#1091#0" expanded="false" />
+            <element signature="e#1194#1249#0" expanded="false" />
+            <element signature="e#1290#1568#0" expanded="false" />
+            <element signature="e#1645#2432#0" expanded="false" />
+            <element signature="e#2481#3419#0" expanded="false" />
+            <element signature="e#3468#4664#0" expanded="false" />
+            <element signature="e#4736#4904#0" expanded="false" />
+            <element signature="e#4942#5110#0" expanded="false" />
+            <element signature="e#5215#5412#0" expanded="false" />
+            <element signature="e#5468#5597#0" expanded="false" />
+            <element signature="e#5651#5775#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClickBeetleJS/tests/js/clickbeetle.main.tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.016456923">
+          <folding>
+            <element signature="e#76#126#0" expanded="false" />
+            <element signature="e#199#362#0" expanded="false" />
+            <element signature="e#431#475#0" expanded="false" />
+            <element signature="e#539#689#0" expanded="false" />
+            <element signature="e#764#925#0" expanded="false" />
+            <element signature="e#984#1176#0" expanded="false" />
+            <element signature="e#1265#1474#0" expanded="false" />
+            <element signature="e#1533#1792#0" expanded="false" />
+            <element signature="e#1879#2018#0" expanded="false" />
+            <element signature="e#2118#2206#0" expanded="false" />
+            <element signature="e#2267#2359#0" expanded="false" />
+            <element signature="e#2425#2636#0" expanded="false" />
+            <element signature="e#2707#3017#0" expanded="false" />
+            <element signature="e#3103#3293#0" expanded="false" />
+            <element signature="e#3377#3497#0" expanded="false" />
+            <element signature="e#3583#3798#0" expanded="false" />
+            <element signature="e#3882#4098#0" expanded="false" />
+            <element signature="e#4195#4399#0" expanded="false" />
+            <element signature="e#4494#4699#0" expanded="false" />
+            <element signature="e#4768#5226#0" expanded="false" />
+            <element signature="e#5312#5491#0" expanded="false" />
+            <element signature="e#5574#5752#0" expanded="false" />
+            <element signature="e#5839#6069#0" expanded="false" />
+            <element signature="e#6153#6382#0" expanded="false" />
+            <element signature="e#6453#6590#0" expanded="false" />
+            <element signature="e#6673#6841#0" expanded="false" />
+            <element signature="e#6925#7125#0" expanded="false" />
+            <element signature="e#7224#7513#0" expanded="false" />
           </folding>
         </state>
       </provider>

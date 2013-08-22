@@ -7,12 +7,16 @@
     ClickBeetle.prototype = {
         $menus: [],
         $timers: [],
+        $clickActions: [],
 
         init: function(){
             var index = -1;
             this.$menus = $(document).find(".clickbeetle-menu");
             this.$timers.length = 0;
             this.$timers.length = this.$menus.length;
+            //This is only necessary for IE v 7/8
+            this.$clickActions.length = 0;
+            this.$clickActions.length = this.$menus.length;
 
             while(typeof this.$menus[++index] !== "undefined"){
                 this.appendTabElement(this.$menus[index]);
@@ -22,7 +26,7 @@
                 if($(this.$menus[index]).hasClass("hover")){
                     this.hoverBindings(this.$menus[index], index);
                 } else if($(this.$menus[index]).hasClass("click")){
-                    this.clickBindings(this.$menus[index]);
+                    this.clickBindings(this.$menus[index], index);
                 }
             }
         },
@@ -105,7 +109,7 @@
             }
         },
 
-        clickBindings: function($menu){
+        clickBindings: function($menu, $index){
             var $this = this,
                 anchors = $($menu).find('a'),
                 index = 0;
@@ -113,10 +117,13 @@
             $($menu).find('a').first()
                 .unbind("click")
                 .bind("click", function(e){
-                    if($($menu).hasClass("hide")){
+                    if($($menu).hasClass("hide") || $this.$clickActions[$index] !== true){
                         $this.focusAction(e);
+                        $this.$clickActions[$index] = true;
                     } else {
                         $this.blurAction(e);
+                        $($this.findMenuTop(e.target)).blur();
+                        $this.$clickActions[$index] = false;
                     }
                     e.stopPropagation();
                     return false;
@@ -127,6 +134,8 @@
                     .unbind("click")
                     .bind('click', function(e){
                         $this.blurAction(e);
+                        $this.$clickActions[$index] = false;
+                        $(e.target).blur();
                         e.stopPropagation();
                         return true;
                     });
