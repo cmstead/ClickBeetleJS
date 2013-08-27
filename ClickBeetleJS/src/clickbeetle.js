@@ -56,24 +56,24 @@
                 $this = this;
 
             $($menu).find('a')
-                .unbind("focus")
-                .bind("focus", function(e){
+                .off("focus")
+                .on("focus", function(e){
                     $this.focusAction(e);
                 });
 
             $(firstAnchor)
-                .unbind("blur")
-                .bind("blur", function(e){
+                .off("blur")
+                .on("blur", function(e){
                     $this.blurAction(e);
                 });
 
             $(lastChild)
-                .unbind("focus")
-                .bind("focus", function(e){
+                .off("focus")
+                .on("focus", function(e){
                     $this.focusAction(e)
                 })
-                .unbind("blur")
-                .bind("blur", function(e){
+                .off("blur")
+                .on("blur", function(e){
                     $this.blurAction(e);
                 });
         },
@@ -82,12 +82,12 @@
             var $this = this;
 
             $($menu)
-                .unbind("mouseenter")
-                .bind("mouseenter", function(e){
+                .off("mouseenter")
+                .on("mouseenter", function(e){
                     $this.focusAction(e);
                 })
-                .unbind("mouseleave")
-                .bind("mouseleave", function(e){
+                .off("mouseleave")
+                .on("mouseleave", function(e){
                     clearTimer($index);
                     $this.$timers[$index] = setTimeout(function(){
                         $this.blurAction(e);
@@ -95,8 +95,8 @@
                 });
 
             $($menu).children()
-                .unbind("mouseenter")
-                .bind("mouseenter", function(e){
+                .off("mouseenter")
+                .on("mouseenter", function(e){
                     clearTimer($index);
                     $this.focusAction(e);
                 });
@@ -115,8 +115,8 @@
                 index = 0;
 
             $($menu).find('a').first()
-                .unbind("click")
-                .bind("click", function(e){
+                .off("click")
+                .on("click", function(e){
                     if($($menu).hasClass("hide") || $this.$clickActions[$index] !== true){
                         $this.focusAction(e);
                         $this.$clickActions[$index] = true;
@@ -131,8 +131,8 @@
 
             while(typeof (anchor = anchors[++index]) !== 'undefined'){
                 $(anchor)
-                    .unbind("click")
-                    .bind('click', function(e){
+                    .off("click")
+                    .on('click', function(e){
                         $this.blurAction(e);
                         $this.$clickActions[$index] = false;
                         $(e.target).blur();
